@@ -1,0 +1,10 @@
+@mixin hoverBg($color) {
+    &:hover {
+        background-color: darken($color, 20%);
+    }
+}
+@mixin hoverText($color) {
+    &:hover {
+        color: darken($color, 20%);
+    }
+}

@@ -1,0 +1,49 @@
+.head {
+    &__title {
+        font-family: $font-1;
+        color: $secondary-light;
+        text-align: center;
+        margin-bottom: 55px;
+        font-size: 2.1rem;
+    }
+
+    &__nav {
+        width: 373px;
+        margin: 0 auto;
+        background-color: $secondary-darker;
+        height: 63px;
+        box-sizing: border-box;
+        padding: 6px;
+        border-radius: 9999px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+
+        &__btn {
+            border-radius: 9999px;
+            height: 100%;
+            width: 100%;
+            margin: 0 2px;
+            border: none;
+            font-family: $font-setting;
+            font-weight: 700;
+            background-color: transparent;
+            color: $secondary-light;
+            opacity: 0.5;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &--active {
+                background-color: $primary;
+                color: $secondary-darker;
+                opacity: 1;
+            }
+        }
+    }
+}
