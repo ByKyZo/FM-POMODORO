@@ -16,18 +16,9 @@
     overflow-y: auto;
 
     &__content {
-        margin: 50px 6px;
+        //margin: 50px 6px;
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
         position: relative;
-        // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        // padding: 28px;
-        // min-width: 300px;
-        // height: 100px;
-        @media (max-width: 600px) {
-            padding: 28px 14px;
-        }
-        @media (max-width: 400px) {
-        }
     }
 }
 

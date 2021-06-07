@@ -5,7 +5,6 @@
     border-radius: 50%;
     width: 410px;
     height: 410px;
-    border-radius: 50%;
     background: linear-gradient(145deg, #1b1e39, #202343);
     box-shadow: 33px 33px 43px #171930, -33px -33px 43px #25294e;
     user-select: none;
@@ -13,9 +12,15 @@
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease;
+    margin: 0 auto;
+    @media (max-width: 480px) {
+        width: 330px;
+        height: 330px;
+    }
 
     &:hover {
         transform: scale(0.99);
+
         .counter__inside__wrapper__btn-start {
             color: $primary;
         }
@@ -40,6 +45,11 @@
                 text-align: center;
                 font-weight: 700;
                 letter-spacing: -2px;
+
+                &--end {
+                    color: var(--primary);
+                    animation: timerEnd 0.5s infinite alternate ease;
+                }
             }
 
             &__btn-start {
@@ -63,6 +73,10 @@
             fill: none;
             stroke: $primary;
             stroke-width: 6px;
+            transform-origin: center;
+            transform: rotateZ(-90deg);
+            //stroke-dasharray: 503px;
+            //stroke-dashoffset: 3%;
         }
     }
 }

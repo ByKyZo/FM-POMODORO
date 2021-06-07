@@ -6,9 +6,10 @@ interface IModal {
     children: React.ReactNode;
     isOpen: boolean;
     setIsOpen: (arg: boolean) => void;
+    contentClass: string;
 }
 
-const Modal = ({ children, isOpen, setIsOpen }: IModal) => {
+const Modal = ({ children, isOpen, setIsOpen, contentClass }: IModal) => {
     const [isOpenContent, setIsOpenContent] = useState(false);
     const modalRef = useRef() as React.RefObject<HTMLDivElement>;
 
@@ -50,7 +51,7 @@ const Modal = ({ children, isOpen, setIsOpen }: IModal) => {
                         appear={true}
                         timeout={300}
                         unmountOnExit>
-                        <div ref={modalRef} className="modal__content">
+                        <div ref={modalRef} className={`modal__content ${contentClass}`}>
                             {children}
                         </div>
                     </CSSTransition>
@@ -62,8 +63,8 @@ const Modal = ({ children, isOpen, setIsOpen }: IModal) => {
 
 Modal.propTypes = {
     children: PropTypes.node,
-    isOpen: PropTypes.bool,
-    setIsOpen: PropTypes.func,
+    isOpen: PropTypes.bool.isRequired,
+    setIsOpen: PropTypes.func.isRequired,
 };
 
 export default Modal;

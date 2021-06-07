@@ -1,27 +1,31 @@
 html[data-color='RED'] {
-    --primary: #f87070;
+  --primary: #f87070;
 }
+
 html[data-color='CYAN'] {
-    --primary: #70f3f8;
+  --primary: #70f3f8;
 }
+
 html[data-color='VIOLET'] {
-    --primary: #d881f8;
+  --primary: #d881f8;
 }
 
 html[data-font='KHUMB_SANS'] {
-    --font-setting: 'Kumbh Sans', sans-serif;
+  --font-setting: 'Kumbh Sans', sans-serif;
 }
+
 html[data-font='ROBOTO_SLAB'] {
-    --font-setting: 'Roboto Slab', serif;
+  --font-setting: 'Roboto Slab', serif;
 }
+
 html[data-font='SPACE_MONO'] {
-    --font-setting: 'Space Mono', monospace;
+  --font-setting: 'Space Mono', monospace;
 }
 
 :root {
-    --font-1: 'Kumbh Sans', sans-serif;
-    --font-2: 'Roboto Slab', serif;
-    --font-3: 'Space Mono', monospace;
+  --font-1: 'Kumbh Sans', sans-serif;
+  --font-2: 'Roboto Slab', serif;
+  --font-3: 'Space Mono', monospace;
 }
 
 $primary: var(--primary);
@@ -43,28 +47,4 @@ $font-1: var(--font-1);
 $font-2: var(--font-2);
 $font-3: var(--font-3);
 
-// --secondary-dark: #1e213f;
-// --secondary-darker: #161932;
 
-// --secondary-midLight: #eff1fa;
-// --secondary-light: #d7e0ff;
-// --secondary-lightest: #ffffff;
-
-// $primary: var(--primary);
-
-// $font-setting: var(--font-setting);
-
-// $secondary-dark: var(--secondary-dark);
-// $secondary-darker: var(--secondary-darker);
-
-// $secondary-midLight: var(--secondary-midLight);
-// $secondary-light: var(--secondary-light);
-// $secondary-lightest: var(--secondary-lightest);
-
-// $primary-1: var(--primary-1);
-// $primary-2: var(--primary-2);
-// $primary-3: var(--primary-3);
-
-// $font-1: var(--font-1);
-// $font-2: var(--font-2);
-// $font-3: var(--font-3);

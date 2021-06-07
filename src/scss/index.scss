@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/animation';
 @import './components/head';
 @import './components/counter';
 @import './components/settings';
@@ -8,6 +9,12 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    @media (max-width: 480px) {
+        font-size: 13px;
+    }
 }
 
 body {
